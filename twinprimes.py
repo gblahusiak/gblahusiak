@@ -55,9 +55,9 @@ def count_twin_primes(upper_bound):
         if prime1 < upper_bound and is_prime(prime1) and prime2 < upper_bound and is_prime(prime2):
             twin_prime_count += 1
     return twin_prime_count
-
+upper_bound = int(input("Enter the upper bound to generate twin primes: "))
 start = time.time()
-#generate_twin_primes(10000000)
+generate_twin_primes(upper_bound)
 end = time.time()
 elasped_time_ms = (end - start) * 1000
 print("Elapsed Time: {:.2f} milliseconds".format(elasped_time_ms))
